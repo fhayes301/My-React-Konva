@@ -14,12 +14,12 @@ class MyRect extends React.Component {
   // }
 
   componentDidMount() {
-        const image = new window.Image();
-        image.src = 'https://media.giphy.com/media/xT0xeLXdnrQ5qc5Zeg/giphy.mp4';
-        image.onload = () => {
-          this.setState({
-            image: image
-          });
+      const image = new window.Image();
+      image.src = 'http://konvajs.github.io/assets/yoda.jpg';
+      image.onload = () => {
+        this.setState({
+          image: image
+        });
       }
     }
 
@@ -28,7 +28,7 @@ class MyRect extends React.Component {
     return (
       <Group >
         <Image
-          src={this.state.image}
+          image={this.state.image}
         />
         <Text
           text= "Here's my text!"
